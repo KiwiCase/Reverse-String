@@ -1,12 +1,18 @@
 ﻿using System;
 
-namespace ConsoleApp4 
+namespace ReverseString  
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Enter your string: ");
+            string oString = Console.ReadLine();
+            char[] stringArray = oString.ToCharArray();
+            Array.Reverse(stringArray);
+            string rString = new string(stringArray);
+
+            Console.WriteLine($"Your string reversed = {rString}");
         }
     }
 }
