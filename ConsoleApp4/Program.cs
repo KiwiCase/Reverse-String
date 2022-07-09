@@ -7,12 +7,12 @@ namespace ReverseString
         static void Main(string[] args)
         {
             Console.WriteLine("Enter your string: ");
-            string oString = Console.ReadLine();
-            char[] stringArray = oString.ToCharArray();
+            string ogString = Console.ReadLine();
+            char[] stringArray = ogString.ToCharArray();
             Array.Reverse(stringArray);
-            string rString = new string(stringArray);
+            string revString = new string(stringArray);
 
-            Console.WriteLine($"Your string reversed = {rString}");
+            Console.WriteLine($"Your string reversed = {revString}");
         }
     }
 }
