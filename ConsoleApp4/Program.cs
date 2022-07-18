@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ReverseString  
+namespace ReverseString
 {
     internal class Program
     {
@@ -14,13 +14,14 @@ namespace ReverseString
             bool b = ogString.Equals(revString, StringComparison.OrdinalIgnoreCase);
             if (b == true)
             {
-                Console.WriteLine("" + ogString + " is a Palindrome!");
-            } else
+                Console.WriteLine($"{ogString} is a Palindrome!");
+            }
+            else
             {
                 Console.WriteLine($"Your string reversed = {revString}");
             }
 
-            
+
         }
     }
 }
