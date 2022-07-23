@@ -9,8 +9,14 @@ namespace ReverseString
         {
             Console.WriteLine("Enter your string: ");
             string inputString = Console.ReadLine();
+            string stringReverse = string.Empty;
 
-            Console.WriteLine(inputString[10]); Console.WriteLine(inputString[9]);
+            for (int i = inputString.Length - 1; i >= 0; i--)
+            {
+                stringReverse += inputString[i];
+            }
+
+            Console.WriteLine(stringReverse);
 
         }
     }
