@@ -17,7 +17,7 @@ namespace ReverseString
                 stringReverse += inputString[i];
             }
 
-            if (b == false)
+            if (b == true)
             {
                 Console.WriteLine($"{inputString} is a Palindrome!");
             }
